@@ -11,4 +11,5 @@
 	`docker cp`
 	Подробнее как она работает можете ознакомиться в документации docker https://docs.docker.com/reference/cli/docker/container/cp/
 	Не поддерживает копирование и вставку текста, из-за чего рекомендую не использовать сложные названия для файлов!
+
 Основано на образе: https://github.com/jlesage/docker-baseimage-gui
