@@ -30,8 +30,6 @@ status-logisim:
 		printf "    ID:   $$(docker ps -aqf "name=Logisim")\n"; \
 		printf "    Port: $(LOGISIM_PORT) (Web) / $(LOGISIM_VNC_PORT) (VNC)\n"; \
 		printf "    URL:  $(CYAN)http://127.0.0.1:$(LOGISIM_PORT)$(RESET)\n"; \
-	elif [ "$$STATE" = "exited" ] || [ "$$STATE" = "created" ]; then \
-		printf " $(YELLOW)○$(RESET) Logisim is $(YELLOW)stopped$(RESET) (container exists)\n"; \
 	else \
-		printf " $(RED)○$(RESET) Logisim is $(RED)not found$(RESET) (no container)\n"; \
-	fiß
+		printf " $(RED)○$(RESET) Logisim is $(RED)not running$(RESET)\n"; \
+	fi
