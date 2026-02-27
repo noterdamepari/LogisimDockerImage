@@ -14,7 +14,14 @@ build-container:
 	@printf "$(GREEN)✅ Build finished!$(RESET)\n"
 
 up-logisim:
-	@docker run -d --rm --name Logisim -v $(LOGISIM_VOLUME):/workspace -p $(LOGISIM_PORT):5800 -p $(LOGISIM_VNC_PORT):5900 logisim-docker
+	@docker run -d --rm \
+	--name Logisim \
+	-v $(LOGISIM_VOLUME):/workspace \
+	-p $(LOGISIM_PORT):5800 \
+	-p $(LOGISIM_VNC_PORT):5900 \
+	-e "DISPLAY_WIDTH=$(DISPLAY_WIDTH)" \
+	-e "DISPLAY_HEIGHT=$(DISPLAY_HEIGHT)" \
+	logisim-docker
 	@printf "\n $(GREEN)✔ Logisim is running!$(RESET)\n"
 	@printf " 🖥  URL: $(CYAN)http://127.0.0.1:$(LOGISIM_PORT)$(RESET)\n"
 	@printf " 💡 Hint: Use $(YELLOW)[Opt/Alt + Left Click]$(RESET) to interact\n\n"

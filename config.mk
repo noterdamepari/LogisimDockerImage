@@ -10,3 +10,6 @@ LOGISIM_VNC_PORT ?= 5900
 
 # Local directory to be mounted as the workspace in the container (default ./workspace)
 LOGISIM_VOLUME ?= ./workspace
+
+DISPLAY_WIDTH ?= 1920
+DISPLAY_HEIGHT ?= 1080
