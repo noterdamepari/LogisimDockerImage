@@ -9,9 +9,8 @@ RUN apk add --no-cache \
     ttf-dejavu \
     curl
 
-
 RUN mkdir /Logisim
-RUN mkdir /workspace
+RUN mkdir /workspace && chmod 777 /workspace
 WORKDIR /Logisim
 
 RUN curl -L https://sourceforge.net/projects/circuit/files/2.7.x/2.7.1/logisim-generic-2.7.1.jar -o logisim.jar
