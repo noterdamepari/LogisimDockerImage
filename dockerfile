@@ -1,8 +1,7 @@
 FROM jlesage/baseimage-gui:alpine-3.19-v4
 
 RUN apk add --no-cache \
-    openjdk8 \
-    openjdk17-jre \ 
+    openjdk17-jre \
     libxext \
     libxrender \
     libxtst \
