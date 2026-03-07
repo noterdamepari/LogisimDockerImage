@@ -7,7 +7,7 @@
 Наиболее простым и быстрым вариантом является установка Docker Desktop по данной ссылке:
 https://www.docker.com/get-started/
 
-Если же у вас Linux/Mac, то рекомендуется устанавливать cli версию через ваш пакетный менеджер.
+Если же у вас Linux, то рекомендуется устанавливать cli версию через ваш пакетный менеджер.
 ##### Подробная установка на MacOS:
 Рекомендуется ставить docker через пакетный менеджер brew. Чтобы поставить brew введите в терминал команду:<br>
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`<br>
