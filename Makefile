@@ -19,6 +19,7 @@ up-logisim:
 	-v $(LOGISIM_VOLUME):/workspace \
 	-p $(LOGISIM_PORT):5800 \
 	-p $(LOGISIM_VNC_PORT):5900 \
+	-p $(DEBUG_PORT):7001 \
 	-e "DISPLAY_WIDTH=$(DISPLAY_WIDTH)" \
 	-e "DISPLAY_HEIGHT=$(DISPLAY_HEIGHT)" \
 	logisim-docker

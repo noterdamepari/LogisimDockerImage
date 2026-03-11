@@ -2,6 +2,9 @@
 # Here is default values
 # You can override these values
 
+# Debug Port (default 7001)
+DEBUG_PORT ?= 7001
+
 # Port for the web interface (default 5800)
 LOGISIM_PORT ?= 5800
 
